@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<SplitPane dividerPositions="0.08793969849246232" maxHeight="-Infinity" maxWidth="-Infinity"
+		minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0"
+		xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypackage.scene.rewards.Reward2Controller">
+	<items>
+		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+			<children>
+				<Button id="closeBtn" layoutX="519.0" layoutY="-1.0" mnemonicParsing="false"
+						onMouseClicked="#closeRewardPane" text="Chiudi" />
+				<Label layoutX="7.0" layoutY="4.0" prefHeight="21.0" prefWidth="500.0" text="Premio 2" />
+			</children>
+		</AnchorPane>
+		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+			<children>
+				<Pane prefHeight="359.0" prefWidth="600.0">
+					<children>
+						<ImageView fitHeight="359.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" visible="true">
+							<image>
+								<Image url="@../rewards/Reward2.jpg" />
+							</image>
+						</ImageView>
+					</children>
+				</Pane>
+			</children>
+		</AnchorPane>
+	</items>
+</SplitPane>

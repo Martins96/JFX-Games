@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.TilePane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Sasso Carta Forbice" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypackage.scene.sassocartaforbice.SCFController">
+	<content>
+		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+			<children>
+				<Label fx:id="console" layoutX="125.0" layoutY="131.0" lineSpacing="1.0" prefHeight="88.0" prefWidth="351.0"
+					textAlignment="CENTER">
+					<effect>
+						<Bloom threshold="0.76" />
+					</effect>
+					<font>
+						<Font name="Tahoma" size="18.0" />
+					</font>
+				</Label>
+				<Button fx:id="carta" disable="true" layoutX="242.0" layoutY="257.0" mnemonicParsing="false"
+					onMouseClicked="#cartaAction" prefHeight="31.0" prefWidth="115.0" text="Carta" />
+				<Button fx:id="sasso" disable="true" layoutX="67.0" layoutY="257.0" mnemonicParsing="false"
+					onMouseClicked="#sassoAction" prefHeight="31.0" prefWidth="115.0" text="Sasso" />
+				<Button fx:id="forbici" disable="true" layoutX="418.0" layoutY="257.0" mnemonicParsing="false"
+					onMouseClicked="#forbiciAction" prefHeight="31.0" prefWidth="115.0" text="Forbici" />
+				<Button fx:id="home" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#home"
+					prefHeight="31.0" prefWidth="34.0" text="←" />
+				<Button fx:id="newGame" disable="true" layoutX="182.0" layoutY="322.0" mnemonicParsing="false"
+					onMouseClicked="#newGame" prefHeight="35.0" prefWidth="237.0" text="Nuova Partita" />
+				<Label fx:id="cpuChoice" layoutX="125.0" layoutY="47.0" prefHeight="78.0" prefWidth="355.0"
+					textAlignment="CENTER" />
+			</children>
+		</AnchorPane>
+	</content>
+</TitledPane>
